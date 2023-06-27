@@ -1,0 +1,80 @@
+{
+    "plataformas": [
+        {
+            "0": "PC"
+        },
+        {
+            "1": "Arcade"
+        },
+        {
+            "2": "Atari 2600"
+        },
+        {
+            "1": "Nintendo Entertainment System (NES)"
+        },
+        {
+            "2": "Master System"
+        },
+        {
+            "2": "Super Nintendo Entertainment System (SNES)"
+        },
+        {
+            "3": "Sega Genesis (Mega Drive)"
+        },
+        {
+            "4": "Nintendo 64"
+        },
+        {
+            "5": "PlayStation"
+        },
+        {
+            "6": "Sega Saturn"
+        },
+        {
+            "7": "Nintendo GameCube"
+        },
+        {
+            "8": "PlayStation 2"
+        },
+        {
+            "9": "Xbox"
+        },
+        {
+            "12": "Dreamcast"
+        },
+        {
+            "10": "Nintendo Wii"
+        },
+        {
+            "11": "PlayStation 3"
+        },
+        {
+            "12": "Xbox 360"
+        },
+        {
+            "13": "Nintendo Switch"
+        }
+    ],
+    "diculdades": [
+        {"AAA": "Imperdoável"},
+        {"AA": "Difícil"},
+        {"A": "Complicado"},
+        {"B": "Médio"},
+        {"C": "Fácil"},
+        {"": "Não se aplica"}
+    ],
+    "notas": [
+        {"1": "Tragédia"},
+        {"2": "Terrível"},
+        {"3": "Ruim"},
+        {"4": "Mediano"},
+        {"5": "Tanto Faz"},
+        {"6": "Decente"},
+        {"7": "Bom"},
+        {"8": "Muito bom"},
+        {"9": "Ótimo"},
+        {"10": "Perfeito"},
+        {"11": "Obra-prima"},
+        {"": "Incrível"}
+    ]
+}

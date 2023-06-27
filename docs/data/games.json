@@ -1,0 +1,40 @@
+{
+    "jogos": [
+        {
+            "indice": 1,
+            "nome": "The Legend of Zelda: Breath of the Wild",
+            "console": "12",
+            "genero": "Aventura",
+            "subgenero": "Ação",
+            "data": "3/3/2023",
+            "tempo": "20:53",
+            "nota": 1,
+            "dificuldade": "AAA",
+            "condicao_vitoria": "Derrotar o Calamity Ganon"
+        },
+        {
+            "indice": 2,
+            "nome": "God of War",
+            "console": "12",
+            "genero": "Ação",
+            "subgenero": "Aventura",
+            "data": "4/4/2023",
+            "tempo": "20:00",
+            "nota": 1,
+            "dificuldade": "AAA",
+            "condicao_vitoria": "Derrotar as criaturas mitológicas e os deuses"
+        },
+        {
+            "indice": 3,
+            "nome": "Grand Theft Auto V",
+            "console": "12",
+            "genero": "Ação",
+            "subgenero": "Mundo Aberto",
+            "data": "5/5/2023",
+            "tempo": "30:40",
+            "nota": 1,
+            "dificuldade": "AAA",
+            "condicao_vitoria": "Completar a história principal e missões secundárias"
+        }
+    ]
+}
