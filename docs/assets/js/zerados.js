@@ -1,4 +1,9 @@
-// Função que le o arquivo json e retorna um objeto
+/**
+ * Reads a JSON file from a given URL.
+ *
+ * @param {string} nomeArquivo - The name or URL of the JSON file.
+ * @returns {object} - The JSON object obtained from the file.
+ */
 function lerJson(nomeArquivo) {
     var request = new XMLHttpRequest();
     request.open("GET", nomeArquivo, false);
@@ -7,55 +12,54 @@ function lerJson(nomeArquivo) {
     return json;
 }
 
-// Função para criar a tabela HTML com os dados dos jogos
-function criarTabelaJogos(jogos) {
-    var tabelaHTML = "<table>";
+/**
+ * Creates an HTML table to display a list of games.
+ *
+ * @param {object} data - The data object containing platform and difficulty information.
+ * @param {Array} jogos - An array of game objects to be displayed in the table.
+ * @returns {string} - The generated HTML table as a string.
+ */
+function criarTabelaJogos(data, jogos) {
+    var tabelaHTML = `<table>
+    <caption>Jogos Zerados</caption>
+    <thead>
+        <tr>
+            <th>Índice</th>
+            <th>Nome</th>
+            <th>Console</th>
+            <th>Gênero</th>
+            <th>Subgênero</th>
+            <th>Data</th>
+            <th>Tempo</th>
+            <th>Nota</th>
+            <th>Dificuldade</th>
+            <th>Condição de Vitória</th>
+        </tr>
+    </thead>
+    <tbody>`;
 
-    // Cabeçalho da tabela
-    tabelaHTML += "<caption>Jogos Zerados</caption>";
-    tabelaHTML += "<thead>"
-    tabelaHTML += "<tr>";
-    tabelaHTML += "<th>Índice</th>";
-    tabelaHTML += "<th>Nome</th>";
-    tabelaHTML += "<th>Console</th>";
-    tabelaHTML += "<th>Gênero</th>";
-    tabelaHTML += "<th>Subgênero</th>";
-    tabelaHTML += "<th>Data</th>";
-    tabelaHTML += "<th>Tempo</th>";
-    tabelaHTML += "<th>Nota</th>";
-    tabelaHTML += "<th>Dificuldade</th>";
-    tabelaHTML += "<th>Condição de Vitória</th>";
-    tabelaHTML += "</tr>";
-    tabelaHTML += "</thead>"
-    tabelaHTML += "<tbody>"
-    // Linhas da tabela com os dados dos jogos
     for (var i = 0; i < jogos.length; i++) {
-        tabelaHTML += "<tr>";
-        tabelaHTML += "<td>" + jogos[i].indice + "</td>";
-        tabelaHTML += "<td>" + jogos[i].nome + "</td>";
-        tabelaHTML += "<td>" + jogos[i].console + "</td>";
-        tabelaHTML += "<td>" + jogos[i].genero + "</td>";
-        tabelaHTML += "<td>" + jogos[i].subgenero + "</td>";
-        tabelaHTML += "<td>" + jogos[i].data + "</td>";
-        tabelaHTML += "<td>" + jogos[i].tempo + "</td>";
-        tabelaHTML += "<td>" + jogos[i].nota + "</td>";
-        tabelaHTML += "<td>" + jogos[i].dificuldade + "</td>";
-        tabelaHTML += "<td>" + jogos[i].condicao_vitoria + "</td>";
-        tabelaHTML += "</tr>";
+        tabelaHTML += `<tr>
+    <td> ${jogos[i].indice} </td>
+    <td> ${jogos[i].nome} </td>
+    <td> ${data.plataformas[jogos[i].console]} </td>
+    <td> ${data.genero[jogos[i].genero].nome} </td>
+    <td> ${data.genero[jogos[i].genero].subgeneros[jogos[i].subgenero]} </td>
+    <td> ${jogos[i].data} </td>
+    <td> ${jogos[i].tempo} </td>
+    <td> ${jogos[i].nota}: ${data.notas[jogos[i].nota]} </td>
+    <td> ${jogos[i].dificuldade}: ${data.dificuldades[jogos[i].dificuldade]} </td>
+    <td> ${jogos[i].condicao_vitoria} </td>
+</tr>`;
     }
-    tabelaHTML += "</tbody>"
-    tabelaHTML += "</table>";
+    tabelaHTML += `</tbody>
+</table>`;
 
     return tabelaHTML;
 }
 
-// Obtém a div onde a tabela será exibida
-var divTabela = document.getElementById("tabelaJogos");
-
-// Lê o arquivo JSON com os dados dos jogos
-var jogosJson = lerJson("data/games.json");
-// Cria a tabela HTML com os dados dos jogos
-var tabelaJogosHTML = criarTabelaJogos(jogosJson.jogos);
-
-// Insere a tabela dentro da div
+const divTabela = document.getElementById("tabelaJogos");
+const jogosJson = lerJson("data/games.json");
+const dataJson = lerJson("data/data.json");
+const tabelaJogosHTML = criarTabelaJogos(dataJson, jogosJson.jogos);
 divTabela.innerHTML = tabelaJogosHTML;

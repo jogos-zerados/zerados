@@ -1,80 +1,246 @@
 {
-    "plataformas": [
-        {
-            "0": "PC"
+    "plataformas": {
+        "0": "PC",
+        "1": "Arcade",
+        "2": "Atari 2600",
+        "3": "Master System",
+        "4": "Nintendo Entertainment System (NES)",
+        "5": "Sega Genesis (Mega Drive)",
+        "6": "Super Nintendo Entertainment System (SNES)",
+        "7": "Sega Saturn",
+        "8": "Nintendo 64",
+        "9": "PlayStation",
+        "10": "Dreamcast",
+        "11": "Nintendo GameCube",
+        "12": "PlayStation 2",
+        "13": "Xbox",
+        "14": "Nintendo Wii",
+        "15": "PlayStation 3",
+        "16": "Xbox 360",
+        "17": "Nintendo Switch"
+    },
+    "dificuldades": {
+        "AAA": "Imperdoável",
+        "AA": "Difícil",
+        "A": "Complicado",
+        "B": "Médio",
+        "C": "Fácil",
+        "NA": "Não se aplica"
+    },
+    "notas": {
+        "1": "Tragédia",
+        "2": "Terrível",
+        "3": "Ruim",
+        "4": "Mediano",
+        "5": "Tanto Faz",
+        "6": "Decente",
+        "7": "Bom",
+        "8": "Muito bom",
+        "9": "Ótimo",
+        "10": "Perfeito",
+        "11": "Obra-prima",
+        "": "Incrível"
+    },
+    "genero": {
+        "1": {
+            "nome": "RPG",
+            "subgeneros": {
+                "1": "Action RPG",
+                "2": "Estilo Ocidental",
+                "3": "RPG Estratégico",
+                "4": "RPG Plataforma",
+                "5": "RPG de Turno",
+                "6": "Roguelike",
+                "7": "Sui Generis"
+            }
         },
-        {
-            "1": "Arcade"
+        "2": {
+            "nome": "Ação",
+            "subgeneros": {
+                "1": "Exploração 3D",
+                "2": "FPS",
+                "3": "Furtivo",
+                "4": "Hack & Slash",
+                "5": "Mundo Aberto",
+                "6": "Rail Shooter",
+                "7": "Survival Horror",
+                "8": "Top-View"
+            }
         },
-        {
-            "2": "Atari 2600"
+        "3": {
+            "nome": "Luta",
+            "subgeneros": {
+                "1": "1ª Pessoa",
+                "2": "Esportivo",
+                "3": "Luta 2D",
+                "4": "Luta 3D",
+                "5": "Luta em Turno",
+                "6": "Luta em Área",
+                "7": "Wrestling"
+            }
         },
-        {
-            "1": "Nintendo Entertainment System (NES)"
+        "4": {
+            "nome": "Puzzle",
+            "subgeneros": {
+                "1": "Combativo",
+                "2": "Combinativo",
+                "3": "Conhecimentos",
+                "4": "Labirinto",
+                "5": "Lógico",
+                "6": "Perceptivo",
+                "7": "Reativo",
+                "8": "Variado"
+            }
         },
-        {
-            "2": "Master System"
+        "5": {
+            "nome": "Corrida",
+            "subgeneros": {
+                "1": "Combate Veícular",
+                "2": "Contra o Tempo",
+                "3": "Corrida Clássica",
+                "4": "Estilo Kart",
+                "5": "Simulador",
+                "6": "Snowboard",
+                "7": "Visão Isométrica",
+                "8": "Visão Superior"
+            }
         },
-        {
-            "2": "Super Nintendo Entertainment System (SNES)"
+        "6": {
+            "nome": "Estratégia",
+            "subgeneros": {
+                "1": "Tempo Real",
+                "2": "Turno/Isométrico",
+                "3": "Turno/Unidades",
+                "4": "Gerenciamento"
+            }
         },
-        {
-            "3": "Sega Genesis (Mega Drive)"
+        "7": {
+            "nome": "Simulação",
+            "subgeneros": {
+                "1": "Aérea",
+                "2": "Construção",
+                "3": "Fazendinha",
+                "4": "Pescaria",
+                "5": "Profissão",
+                "6": "Vida Real"
+            }
         },
-        {
-            "4": "Nintendo 64"
+        "8": {
+            "nome": "Outro",
+            "subgeneros": {
+                "1": "Aplicativo",
+                "2": "Arte",
+                "3": "Compilação",
+                "4": "Educativo",
+                "5": "Game Show",
+                "6": "Inespecífico",
+                "7": "Minigame",
+                "8": "Multigênero"
+            }
         },
-        {
-            "5": "PlayStation"
+        "9": {
+            "nome": "Shooter",
+            "subgeneros": {
+                "1": "Atirador",
+                "2": "Bullet Hell",
+                "3": "Direção 3D",
+                "4": "Direção Horizontal",
+                "5": "Direção Isométrica",
+                "6": "Direção Vertical",
+                "7": "Point-of-View"
+            }
         },
-        {
-            "6": "Sega Saturn"
+        "10": {
+            "nome": "Plataforma",
+            "subgeneros": {
+                "1": "2.5D",
+                "2": "2D Clássico",
+                "3": "Elementos de RPG",
+                "4": "Ambiente 3D",
+                "5": "Cinemático",
+                "6": "Collectathon",
+                "7": "Estilo Kaizo",
+                "8": "Explorativo",
+                "9": "Quebra-Cabeça",
+                "10": "Run & Gun",
+                "11": "Visão de Cima"
+            }
         },
-        {
-            "7": "Nintendo GameCube"
+        "11": {
+            "nome": "Briga de Eua",
+            "subgeneros": {
+                "1": "3D Explorativo",
+                "2": "3D Linear",
+                "3": "Isométrico",
+                "4": "Musou",
+                "5": "Side-Scroller",
+                "6": "Vista de Cima"
+            }
         },
-        {
-            "8": "PlayStation 2"
+        "12": {
+            "nome": "Esporte",
+            "subgeneros": {
+                "1": "Arremesso",
+                "2": "Basquete",
+                "3": "Beisebol",
+                "4": "Boliche",
+                "5": "Football",
+                "6": "Futebol",
+                "7": "Golfe",
+                "8": "Hóquei",
+                "9": "Minigolfe",
+                "10": "Olimpíadas",
+                "11": "Original",
+                "12": "Queimada",
+                "13": "Ski/Skate",
+                "14": "Tênis"
+            }
         },
-        {
-            "9": "Xbox"
+        "13": {
+            "nome": "Ritmo",
+            "subgeneros": {
+                "1": "Dança",
+                "2": "QTE"
+            }
         },
-        {
-            "12": "Dreamcast"
+        "14": {
+            "nome": "Card Game",
+            "subgeneros": {
+                "1": "Com História",
+                "2": "Competitivo"
+            }
         },
-        {
-            "10": "Nintendo Wii"
+        "15": {
+            "nome": "Acessório",
+            "subgeneros": {
+                "1": "Pistolinha"
+            }
         },
-        {
-            "11": "PlayStation 3"
+        "16": {
+            "nome": "Visual Novel",
+            "subgeneros": {
+                "1": "Filme",
+                "2": "Textual"
+            }
         },
-        {
-            "12": "Xbox 360"
+        "17": {
+            "nome": "Adventure",
+            "subgeneros": {
+                "1": "Exploração",
+                "2": "Point & Click",
+                "3": "Sandbox",
+                "4": "Narrativo"
+            }
         },
-        {
-            "13": "Nintendo Switch"
+        "18": {
+            "nome": "Mesa",
+            "subgeneros": {
+                "1": "Block Breaker",
+                "2": "Cassino",
+                "3": "Pinball",
+                "4": "Sinuca",
+                "5": "Tabuleiro"
+            }
         }
-    ],
-    "diculdades": [
-        {"AAA": "Imperdoável"},
-        {"AA": "Difícil"},
-        {"A": "Complicado"},
-        {"B": "Médio"},
-        {"C": "Fácil"},
-        {"": "Não se aplica"}
-    ],
-    "notas": [
-        {"1": "Tragédia"},
-        {"2": "Terrível"},
-        {"3": "Ruim"},
-        {"4": "Mediano"},
-        {"5": "Tanto Faz"},
-        {"6": "Decente"},
-        {"7": "Bom"},
-        {"8": "Muito bom"},
-        {"9": "Ótimo"},
-        {"10": "Perfeito"},
-        {"11": "Obra-prima"},
-        {"": "Incrível"}
-    ]
+    }
 }
